@@ -4,6 +4,7 @@ metadata:
   name: web
 spec:
   replicas: 1
+  progressDeadlineSeconds: 30   # <- add this
   selector:
     matchLabels: { app: web }
   template:
